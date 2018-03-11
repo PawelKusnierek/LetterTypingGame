@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>The Letter Typing Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div id="title">
-    <h1>You have 60 seconds to press the correct letter as many times as possible.</h1>
-
+    <h1 id="gameName">The Letter Typing Game</h1>
+    <h1 id="instruction">You have 60 seconds to press the correct letter as many times as possible. <br> <br>
+        The timer will start as soon as you press the first letter.</h1>
 </div>
 
 <div id="heading-container">
@@ -20,14 +21,18 @@
 
 <div id="box-container">
     <div id="timer">
-        <p>60</p>
+        <p class="number">60</p>
     </div>
     <div id="letter">
         <p>k</p>
     </div>
     <div id="score">
-        <p>0</p>
+        <p class="number">0</p>
     </div>
+</div>
+
+<div id="resetButton">
+    <button>Reset Game</button>
 </div>
 
 <div id="highScores">
