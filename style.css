@@ -1,0 +1,95 @@
+#title {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+h1 {
+    width: 1040px;
+    font-size: 30px;
+}
+
+#heading-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+#timer-heading {
+    width: 200px;
+    height: 45px;
+    font-size: 35px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 30px;
+    margin-top: 10px;
+}
+
+#letter-heading {
+    width: 260px;
+    height: 45px;
+    font-size: 35px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 10px;
+
+}
+
+#score-heading {
+    width: 200px;
+    height: 45px;
+    font-size: 35px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 120px;
+    margin-top: 10px;
+}
+
+h2 {
+    display: inline;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#box-container{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+#timer {
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 30px;
+
+}
+
+#letter {
+    width: 260px;
+    height: 200px;
+    font-size: 100px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#score {
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 120px;
+
+}
+
+p {
+    margin: 0;
+    border: 1px solid black;
+}
