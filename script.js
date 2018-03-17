@@ -1,9 +1,10 @@
 let score = 0;
 let pressedLetter;
-let isTimerLive;
+let isTimerLive = false;
 const display = document.querySelector('#number');
 const letterOnScreen = document.querySelector('#letterOnScreen');
 const arrayOfLetters = 'QWERTYUIOPASDFGHJKLZXCVBNM'.split('');
+const scoreDisplay = document.querySelector('#scoreDisplay');
 
 onLoad();
 
@@ -16,7 +17,7 @@ function startTimer(display) {
         seconds = parseInt(timer % 60, 10);
         seconds = seconds < 10 ? "0" + seconds : seconds;
         display.textContent = seconds;
-        displayNextLetter();
+        // displayNextLetter();
 
         if (--timer < 0) {
             timer = 0;
@@ -27,28 +28,45 @@ function startTimer(display) {
 
 
 function onLoad() {
-    startTimer(display);
-
+    displayNextLetter();
+    document.addEventListener('keypress', (event) => {
+        let keyName = event.key;
+        onKeyPress(keyName);
+    })
+    // startTimer(display);
     // score = 0;
     //keyListeners and adding keyDown();
 }
 
-function onKeyDown() {
-    //compare screenLetter to pressedLetter
-    //based on outcome either successfulKey or unSuccessfulKey
+function onKeyPress(pressedKey) {
+    if(!isTimerLive)
+    {
+        startTimer(display);
+    }
+
+    if(pressedKey === letterOnScreen.textContent.toLowerCase())
+    {
+        successfulKey()
+    }
+    else
+    {
+        unSuccessfulKey()
+    }
 }
 
 function successfulKey() {
-    //add 1 to score
+    score++;
+    scoreDisplay.textContent = score.toString();
+    displayNextLetter();
 }
 
 function unSuccessfulKey() {
-    //subtract 1 if score > 0
-}
-
-function restartGame() {
-    //resetTimer, nextLetter, resetScore();
-    //reinitiate the listeners
+    if(score > 0)
+    {
+        score--;
+        scoreDisplay.textContent = score.toString();
+    }
+    displayNextLetter();
 }
 
 function onTimerEnd() {
@@ -59,6 +77,11 @@ function onTimerEnd() {
 function displayNextLetter() {
     let randomNumber = Math.floor(Math.random() * 26);
     letterOnScreen.textContent = arrayOfLetters[randomNumber];
+}
+
+function restartGame() {
+    //resetTimer, nextLetter, resetScore();
+    //reinitiate the listeners
 }
 
 function resetTimer() {
