@@ -1,30 +1,34 @@
 let score = 0;
-let screenLetter;
 let pressedLetter;
+let isTimerLive;
 const display = document.querySelector('#number');
+const letterOnScreen = document.querySelector('#letterOnScreen');
+const arrayOfLetters = 'QWERTYUIOPASDFGHJKLZXCVBNM'.split('');
+
 onLoad();
 
 function startTimer(display) {
-    let timer = 59, seconds;
+    let timer = 59;
+    let seconds;
+    isTimerLive = true;
 
     setInterval(function() {
         seconds = parseInt(timer % 60, 10);
         seconds = seconds < 10 ? "0" + seconds : seconds;
         display.textContent = seconds;
+        displayNextLetter();
 
         if (--timer < 0) {
-            timer = 60;
+            timer = 0;
+            isTimerLive = false;
         }
     }, 1000)
-
 }
 
 
 function onLoad() {
-
     startTimer(display);
-    // timer = 60;
-    displayNextLetter();
+
     // score = 0;
     //keyListeners and adding keyDown();
 }
@@ -53,7 +57,8 @@ function onTimerEnd() {
 }
 
 function displayNextLetter() {
-    //random letter from predefined array of letters
+    let randomNumber = Math.floor(Math.random() * 26);
+    letterOnScreen.textContent = arrayOfLetters[randomNumber];
 }
 
 function resetTimer() {
