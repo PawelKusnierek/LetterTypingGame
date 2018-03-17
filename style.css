@@ -132,6 +132,17 @@ button {
     border-radius: 10px;
     border: var(--border);
     background-color: var(--background-color);
-    color: #3a3a3a;
+    color: #000000;
     margin-top: 40px;
+}
+
+#scoreDisplay {
+    transition: all .05s ease;
+}
+.green {
+    background-color: #00a600;
+}
+
+.red {
+    background-color: #f62e1a;
 }

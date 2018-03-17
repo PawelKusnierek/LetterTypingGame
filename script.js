@@ -6,6 +6,7 @@ const letterOnScreen = document.querySelector('#letterOnScreen');
 const arrayOfLetters = 'QWERTYUIOPASDFGHJKLZXCVBNM'.split('');
 const scoreDisplay = document.querySelector('#scoreDisplay');
 const refreshButton = document.querySelector('#resetContent');
+const scoreContainer = document.querySelector('#score');
 
 onLoad();
 
@@ -13,6 +14,7 @@ function onLoad() {
     displayNextLetter();
     document.addEventListener('keypress', onKeyPress);
     refreshButton.addEventListener('click', refreshGame);
+    scoreDisplay.addEventListener('transitionend', removeTransition)
 }
 
 function displayNextLetter() {
@@ -60,6 +62,7 @@ function successfulKey() {
     score++;
     scoreDisplay.textContent = score.toString();
     displayNextLetter();
+    scoreDisplay.classList.add('green');
 }
 
 function unSuccessfulKey() {
@@ -69,6 +72,7 @@ function unSuccessfulKey() {
         scoreDisplay.textContent = score.toString();
     }
     displayNextLetter();
+    scoreDisplay.classList.add('red');
 }
 
 function onTimerEnd() {
@@ -77,6 +81,10 @@ function onTimerEnd() {
     displayScore();
 }
 
+function removeTransition(e) {
+    e.target.classList.remove('red');
+    e.target.classList.remove('green');
+}
 function displayScore()
 {
     console.log(score);
