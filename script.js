@@ -1,11 +1,28 @@
-var score = 0;
-var screenLetter;
-var pressedLetter;
-var timer;
-
+let score = 0;
+let screenLetter;
+let pressedLetter;
+const display = document.querySelector('#number');
 onLoad();
 
+function startTimer(display) {
+    let timer = 59, seconds;
+
+    setInterval(function() {
+        seconds = parseInt(timer % 60, 10);
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        display.textContent = seconds;
+
+        if (--timer < 0) {
+            timer = 60;
+        }
+    }, 1000)
+
+}
+
+
 function onLoad() {
+
+    startTimer(display);
     // timer = 60;
     displayNextLetter();
     // score = 0;
