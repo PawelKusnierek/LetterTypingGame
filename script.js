@@ -95,6 +95,7 @@ function refreshGame() {
     location.reload();
 }
 
+
 // function resetTimer() {
 //
 // }
