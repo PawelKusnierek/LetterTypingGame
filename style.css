@@ -137,7 +137,7 @@ button {
 }
 
 #scoreDisplay {
-    transition: all .05s ease;
+    transition: all .10s ease;
 }
 .green {
     background-color: #00a600;

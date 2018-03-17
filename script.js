@@ -82,8 +82,10 @@ function onTimerEnd() {
 }
 
 function removeTransition(e) {
-    e.target.classList.remove('red');
-    e.target.classList.remove('green');
+    let classList = e.target.classList;
+    while (classList.length > 0) {
+        classList.remove(classList.item(0));
+    }
 }
 function displayScore()
 {
