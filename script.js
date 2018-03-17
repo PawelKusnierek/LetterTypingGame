@@ -1,5 +1,5 @@
 let score = 0;
-let pressedLetter;
+let returnIntervalId;
 let isTimerLive = false;
 const display = document.querySelector('#number');
 const letterOnScreen = document.querySelector('#letterOnScreen');
@@ -8,43 +8,25 @@ const scoreDisplay = document.querySelector('#scoreDisplay');
 
 onLoad();
 
-function startTimer(display) {
-    let timer = 59;
-    let seconds;
-    isTimerLive = true;
-
-    setInterval(function() {
-        seconds = parseInt(timer % 60, 10);
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-        display.textContent = seconds;
-        // displayNextLetter();
-
-        if (--timer < 0) {
-            timer = 0;
-            onTimerEnd();
-        }
-    }, 10)
-}
-
-
 function onLoad() {
     displayNextLetter();
-    document.addEventListener('keypress', (event) => {
-        let keyName = event.key;
-        onKeyPress(keyName);
-    })
-    // startTimer(display);
-    // score = 0;
-    //keyListeners and adding keyDown();
+    document.addEventListener('keypress', onKeyPress)
 }
 
-function onKeyPress(pressedKey) {
+function displayNextLetter() {
+    let randomNumber = Math.floor(Math.random() * 26);
+    letterOnScreen.textContent = arrayOfLetters[randomNumber];
+}
+
+function onKeyPress(event) {
+    let keyName = event.key;
+
     if(!isTimerLive)
     {
         startTimer(display);
     }
 
-    if(pressedKey === letterOnScreen.textContent.toLowerCase())
+    if(keyName === letterOnScreen.textContent.toLowerCase())
     {
         successfulKey()
     }
@@ -52,6 +34,24 @@ function onKeyPress(pressedKey) {
     {
         unSuccessfulKey()
     }
+}
+
+function startTimer(display) {
+    let timer = 59;
+    let seconds;
+    isTimerLive = true;
+
+    returnIntervalId = setInterval(function() {
+        seconds = parseInt(timer % 60, 10);
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        display.textContent = seconds;
+
+        if (--timer < 0) {
+            timer = 0;
+            onTimerEnd();
+            return '';
+        }
+    }, 10);
 }
 
 function successfulKey() {
@@ -70,18 +70,16 @@ function unSuccessfulKey() {
 }
 
 function onTimerEnd() {
-    document.removeEventListener("keypress", )
-}
-
-function displayNextLetter() {
-    let randomNumber = Math.floor(Math.random() * 26);
-    letterOnScreen.textContent = arrayOfLetters[randomNumber];
+    document.removeEventListener("keypress", onKeyPress);
+    clearInterval(returnIntervalId);
+    displayScore();
 }
 
 function displayScore()
 {
     console.log(score);
 }
+
 function restartGame() {
     //resetTimer, nextLetter, resetScore();
     //reinitiate the listeners
