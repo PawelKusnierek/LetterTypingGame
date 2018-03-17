@@ -21,9 +21,9 @@ function startTimer(display) {
 
         if (--timer < 0) {
             timer = 0;
-            isTimerLive = false;
+            onTimerEnd();
         }
-    }, 1000)
+    }, 10)
 }
 
 
@@ -70,8 +70,7 @@ function unSuccessfulKey() {
 }
 
 function onTimerEnd() {
-    //stop listeners
-    //display score? Highscores?
+    document.removeEventListener("keypress", )
 }
 
 function displayNextLetter() {
@@ -79,6 +78,10 @@ function displayNextLetter() {
     letterOnScreen.textContent = arrayOfLetters[randomNumber];
 }
 
+function displayScore()
+{
+    console.log(score);
+}
 function restartGame() {
     //resetTimer, nextLetter, resetScore();
     //reinitiate the listeners
