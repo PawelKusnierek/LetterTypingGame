@@ -161,6 +161,71 @@ button {
     height: 50px;
     font-size: 40px;
     text-align: center;
-    border: 0px;
+    border: 1px solid red;
     background-color: white;
+}
+
+#highScores {
+    position: relative;
+    left: 50%;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: -300px;
+    width: 500px;
+}
+
+h3 {
+    margin: 0;
+}
+
+#highScoreTitle {
+    width: 400px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#databseResults {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+h4 {
+    display: inline;
+    margin: 0;
+    text-align: center;
+}
+
+#thisWeekHighScores {
+    width: 200px;
+}
+
+#allHighScores {
+    width: 200px;
+}
+
+table {
+}
+
+tr {
+    width: 400px;
+}
+
+.dbResult {
+    border: 1px solid black;
+    width: 40px;
+    text-align: center;
+}
+
+.dbName {
+    border: 1px solid black;
+    width: 160px;
+    text-align: center;
 }
