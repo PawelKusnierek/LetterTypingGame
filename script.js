@@ -55,7 +55,7 @@ function startTimer(display) {
             onTimerEnd();
             return '';
         }
-    }, 1);
+    }, 1000);
 }
 
 function successfulKey() {
@@ -79,6 +79,7 @@ function onTimerEnd() {
     document.removeEventListener("keypress", onKeyPress);
     clearInterval(returnIntervalId);
     displayScore();
+    //query database and if result in top 10 
 }
 
 function removeTransition(e) {
@@ -96,10 +97,3 @@ function displayScore() {
     finalScore.textContent = "Your final score: " + score;
 }
 
-// function resetTimer() {
-//
-// }
-//
-// function resetScore() {
-//
-// }
