@@ -6,6 +6,7 @@ const letterOnScreen = document.querySelector('#letterOnScreen');
 const arrayOfLetters = 'QWERTYUIOPASDFGHJKLZXCVBNM'.split('');
 const scoreDisplay = document.querySelector('#scoreDisplay');
 const refreshButton = document.querySelector('#resetContent');
+const finalScore = document.querySelector('#finalScore');
 
 onLoad();
 
@@ -86,15 +87,14 @@ function removeTransition(e) {
         classList.remove(classList.item(0));
     }
 }
-function displayScore()
-{
-    console.log(score);
-}
 
 function refreshGame() {
     location.reload();
 }
 
+function displayScore() {
+    finalScore.textContent = "Your final score: " + score;
+}
 
 // function resetTimer() {
 //
