@@ -76,7 +76,7 @@ h2 {
     font-style: italic;
 }
 
-#box-container{
+#box-container {
     display: flex;
     flex: 1;
     justify-content: center;
@@ -139,6 +139,7 @@ button {
 #scoreDisplay {
     transition: all .10s ease;
 }
+
 .green {
     background-color: #00a600;
 }
@@ -196,7 +197,7 @@ h3 {
 
 }
 
-#databseResults {
+#databaseResults {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
@@ -255,6 +256,7 @@ tr {
     text-indent: 12px;
 
 }
+
 .dbResultRight {
     border: 1px hidden black;
     border-bottom-style: solid;
