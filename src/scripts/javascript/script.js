@@ -110,7 +110,8 @@ function submitScore() {
         url: "/src/scripts/php/submit_score.php",
         type: "post",
         data: {
-            data: sqlScript
+            userName: userName,
+            score: score
         }
     });
 }
