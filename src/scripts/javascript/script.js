@@ -6,9 +6,10 @@ const letterOnScreen = document.querySelector('#letterOnScreen');
 const arrayOfLetters = 'QWERTYUIOPASDFGHJKLZXCVBNM'.split('');
 const scoreDisplay = document.querySelector('#scoreDisplay');
 const refreshButton = document.querySelector('#resetContent');
-const finalScore = document.querySelector('#finalScore');
-const submitScore = document.querySelector('#submitScore');
+const finalScoreDiv = document.querySelector('#finalScore');
+const submitScoreButton = document.querySelector('#submitScore');
 const nameForm = document.querySelector('#nameForm');
+let sqlScript;
 
 onLoad();
 
@@ -17,6 +18,7 @@ function onLoad() {
     document.addEventListener('keypress', onKeyPress);
     refreshButton.addEventListener('click', refreshGame);
     scoreDisplay.addEventListener('transitionend', removeTransition);
+    nameForm.addEventListener("submit", submitScore, false);
 }
 
 function displayNextLetter() {
@@ -27,17 +29,14 @@ function displayNextLetter() {
 function onKeyPress(event) {
     let keyName = event.key;
 
-    if(!isTimerLive)
-    {
+    if (!isTimerLive) {
         startTimer(display);
     }
 
-    if(keyName === letterOnScreen.textContent.toLowerCase())
-    {
+    if (keyName === letterOnScreen.textContent.toLowerCase()) {
         successfulKey()
     }
-    else
-    {
+    else {
         unSuccessfulKey()
     }
 }
@@ -47,7 +46,7 @@ function startTimer(display) {
     let seconds;
     isTimerLive = true;
 
-    returnIntervalId = setInterval(function() {
+    returnIntervalId = setInterval(function () {
         seconds = parseInt(timer % 60, 10);
         seconds = seconds < 10 ? "0" + seconds : seconds;
         display.textContent = seconds;
@@ -68,8 +67,7 @@ function successfulKey() {
 }
 
 function unSuccessfulKey() {
-    if(score > 0)
-    {
+    if (score > 0) {
         score--;
         scoreDisplay.textContent = score.toString();
     }
@@ -81,7 +79,7 @@ function onTimerEnd() {
     document.removeEventListener("keypress", onKeyPress);
     clearInterval(returnIntervalId);
     displayScore();
-    //query database and if result in top 10 
+    //query database and if result in top 10
 }
 
 function removeTransition(e) {
@@ -96,8 +94,25 @@ function refreshGame() {
 }
 
 function displayScore() {
-    finalScore.textContent = "Your final score: " + score;
-    submitScore.textContent = "Enter your name to store score in database:";
+    finalScoreDiv.textContent = "Your final score: " + score;
+    submitScoreButton.textContent = "Enter your name to store score in database:";
     nameForm.classList.remove("invisible");
 }
+
+function submitScore() {
+    let userName = document.getElementById('name').value;
+    //Script to insert the submitted name + score
+    sqlScript = `INSERT INTO lettergame.scores(
+\tname, score)
+\tVALUES (${userName},${score});`;
+
+    $.ajax({
+        url: "/src/scripts/php/submit_score.php",
+        type: "post",
+        data: {
+            data: sqlScript
+        }
+    });
+}
+
 

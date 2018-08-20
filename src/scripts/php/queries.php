@@ -1,3 +1,3 @@
-<?
-$insertQuery = file_get_contents('src/queries/insert_score.sql');
+<?php
+
 $resultsQuery = file_get_contents('src/queries/top_10_results.sql');
