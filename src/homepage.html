@@ -5,29 +5,30 @@
     <title>The Letter Typing Game</title>
     <link rel="stylesheet" href="/src/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
 </head>
 <body>
 
-<div id="title">
-    <h1 id="gameName">The Letter Typing Game</h1>
-    <h1 id="instruction">You have 60 seconds to press the correct letter as many times as possible. <br> <br>
-        The timer will start as soon as you press the first letter.</h1>
+<div id="title" class="flex-container">
+    <h1 id="gameName" class="flex-item">The Letter Typing Game</h1>
+    <h2 id="instruction" class="flex-item">60 seconds to press the correct letter as many times as you can. <br>
+        The timer will start as soon as you press the first letter.</h2>
 </div>
 
 <div id="heading-container">
-    <h2 id="timer-heading">Timer</h2>
-    <h2 id="letter-heading">Next Letter</h2>
-    <h2 id="score-heading">Score</h2>
+    <h2 class="heading-item">Timer</h2>
+    <h2 class="heading-item">Next Letter</h2>
+    <h2 class="heading-item">Score</h2>
 </div>
 
 <div id="box-container">
-    <div id="timer">
-        <p id="number">60</p>
+    <div class="box-item">
+        <p>60</p>
     </div>
-    <div id="letter">
-        <p id="letterOnScreen">k</p>
+    <div class="box-item">
+        <p>K</p>
     </div>
-    <div id="score">
+    <div class="box-item">
         <p id="scoreDisplay">0</p>
     </div>
 </div>
@@ -41,82 +42,81 @@
     <p id="submitScore"></p>
 </div>
 
-<form method="post" class="invisible nameForm" id="nameForm">
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name">
-    <input type="submit" name="submit" value="Submit">
-</form>
+<!--<form method="post" class="invisible nameForm" id="nameForm">-->
+<!--<label for="name">Name</label>-->
+<!--<input type="text" name="name" id="name">-->
+<!--<input type="submit" name="submit" value="Submit">-->
+<!--</form>-->
 
 <!--<div id="highScores">-->
-    <!--<h3 id="highScoreTitle">Highscores</h3>-->
-    <!--<div id="databaseResults">-->
-        <!--<h4 id="thisWeekHighScores">This Week</h4>-->
-        <!--<h4 id="allHighScores">All-time</h4>-->
-    <!--</div>-->
-    <!--<table>-->
-        <!--<tr>-->
-            <!--<td class="dbResult">1. 120</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-            <!--<td class="dbResultRight">1. 123</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-        <!--</tr>-->
-        <!--<tr class="whiteBackground">-->
-            <!--<td class="dbResult">2. 111</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-            <!--<td class="dbResultRight">2. 120</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-            <!--<td class="dbResult">3. 90</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-            <!--<td class="dbResultRight">3. 111</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-        <!--</tr>-->
-        <!--<tr class="whiteBackground">-->
-            <!--<td class="dbResult">4. 87</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-            <!--<td class="dbResultRight">4. 101</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-            <!--<td class="dbResult">5. 85</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-            <!--<td class="dbResultRight">5. 99</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-        <!--</tr>-->
-        <!--<tr class="whiteBackground">-->
-            <!--<td class="dbResult">6. 60</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-            <!--<td class="dbResultRight">6. 97</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-            <!--<td class="dbResult">7. 55</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-            <!--<td class="dbResultRight">7. 95</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-        <!--</tr>-->
-        <!--<tr class="whiteBackground">-->
-            <!--<td class="dbResult">8. 50</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-            <!--<td class="dbResultRight">8. 90</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-            <!--<td class="dbResult">9. 32</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-            <!--<td class="dbResultRight">9. 90</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-        <!--</tr>-->
-        <!--<tr class="whiteBackground">-->
-            <!--<td class="dbResult dbResult10">10. 12</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-            <!--<td class="dbResultRight dbResult10">10. 67</td>-->
-            <!--<td class="dbName">Pawel</td>-->
-        <!--</tr>-->
-    <!--</table>-->
+<!--<h3 id="highScoreTitle">Highscores</h3>-->
+<!--<div id="databaseResults">-->
+<!--<h4 id="thisWeekHighScores">This Week</h4>-->
+<!--<h4 id="allHighScores">All-time</h4>-->
 <!--</div>-->
-
+<!--<table>-->
+<!--<tr>-->
+<!--<td class="dbResult">1. 120</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--<td class="dbResultRight">1. 123</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--</tr>-->
+<!--<tr class="whiteBackground">-->
+<!--<td class="dbResult">2. 111</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--<td class="dbResultRight">2. 120</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td class="dbResult">3. 90</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--<td class="dbResultRight">3. 111</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--</tr>-->
+<!--<tr class="whiteBackground">-->
+<!--<td class="dbResult">4. 87</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--<td class="dbResultRight">4. 101</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td class="dbResult">5. 85</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--<td class="dbResultRight">5. 99</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--</tr>-->
+<!--<tr class="whiteBackground">-->
+<!--<td class="dbResult">6. 60</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--<td class="dbResultRight">6. 97</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td class="dbResult">7. 55</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--<td class="dbResultRight">7. 95</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--</tr>-->
+<!--<tr class="whiteBackground">-->
+<!--<td class="dbResult">8. 50</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--<td class="dbResultRight">8. 90</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td class="dbResult">9. 32</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--<td class="dbResultRight">9. 90</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--</tr>-->
+<!--<tr class="whiteBackground">-->
+<!--<td class="dbResult dbResult10">10. 12</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--<td class="dbResultRight dbResult10">10. 67</td>-->
+<!--<td class="dbName">Pawel</td>-->
+<!--</tr>-->
+<!--</table>-->
+<!--</div>-->
 
 
 <script src="/src/scripts/javascript/script.js"></script>
