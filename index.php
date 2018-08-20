@@ -1,1 +1,4 @@
-<?php header( 'Location: /src/index.html' ) ;  ?>
+<?php
+
+include 'src/homepage.html';
+

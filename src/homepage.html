@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>The Letter Typing Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
 
@@ -37,7 +37,14 @@
 
 <div id="yourScore">
     <p id="finalScore"></p>
+    <p id="submitScore"></p>
 </div>
+
+<form method="post" class="invisible nameForm" id="nameForm">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name">
+    <input type="submit" name="submit" value="Submit">
+</form>
 
 <!--<div id="highScores">-->
     <!--<h3 id="highScoreTitle">Highscores</h3>-->
@@ -111,6 +118,6 @@
 
 
 
-<script src="scripts/script.js"></script>
+<script src="/src/scripts/script.js"></script>
 </body>
 </html>

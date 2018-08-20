@@ -166,6 +166,15 @@ button {
     background-color: white;
 }
 
+#submitScore {
+    width: 400px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    border: 0 solid red;
+    background-color: white;
+}
+
 #highScores {
     position: relative;
     left: 50%;
@@ -243,8 +252,8 @@ tr {
     width: 405px;
 }
 
-.whiteBackground {
-    background-color: rgb(187, 187, 187);
+.invisible {
+    visibility: hidden;
 }
 
 .dbResult {
@@ -275,5 +284,4 @@ tr {
     width: 140px;
     text-align: center;
     padding: 0;
-
 }

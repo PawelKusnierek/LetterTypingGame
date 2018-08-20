@@ -7,6 +7,8 @@ const arrayOfLetters = 'QWERTYUIOPASDFGHJKLZXCVBNM'.split('');
 const scoreDisplay = document.querySelector('#scoreDisplay');
 const refreshButton = document.querySelector('#resetContent');
 const finalScore = document.querySelector('#finalScore');
+const submitScore = document.querySelector('#submitScore');
+const nameForm = document.querySelector('#nameForm');
 
 onLoad();
 
@@ -95,5 +97,7 @@ function refreshGame() {
 
 function displayScore() {
     finalScore.textContent = "Your final score: " + score;
+    submitScore.textContent = "Enter your name to store score in database:";
+    nameForm.classList.remove("invisible");
 }
 
