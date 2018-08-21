@@ -1,6 +1,5 @@
 <?php
 
-include 'src/scripts/php/connection.php';
 include 'src/homepage.html';
 
 $dbopts = parse_url(getenv('DATABASE_URL'));
