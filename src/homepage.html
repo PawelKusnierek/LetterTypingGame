@@ -26,7 +26,7 @@
         <p id="number" class="box-styling">30</p>
     </div>
     <div class="box-item">
-        <p id="letterOnScreen" class="box-styling">K</p>
+        <p id="letterOnScreen" class="box-styling"></p>
     </div>
     <div class="box-item">
         <p id="scoreDisplay" class="box-styling">0</p>
@@ -43,45 +43,44 @@
                     <th class="dbName">Name</th>
                 </tr>
                 <tr>
-                    <td class="dbResult">120</td>
-                    <td class="dbName">Pawel</td>
+                    <td class="dbResult" id="dbResult1"></td>
+                    <td class="dbName" id="dbName1"></td>
                 </tr>
                 <tr class="whiteBackground">
-                    <td class="dbResult">111</td>
-                    <td class="dbName">Pawel</td>
-
+                    <td class="dbResult" id="dbResult2"></td>
+                    <td class="dbName" id="dbName2"></td>
                 </tr>
                 <tr>
-                    <td class="dbResult">90</td>
-                    <td class="dbName">Pawel</td>
+                    <td class="dbResult" id="dbResult3"></td>
+                    <td class="dbName" id="dbName3"></td>
                 </tr>
                 <tr class="whiteBackground">
-                    <td class="dbResult">87</td>
-                    <td class="dbName">Pawel</td>
+                    <td class="dbResult" id="dbResult4"></td>
+                    <td class="dbName" id="dbName4"></td>
                 </tr>
                 <tr>
-                    <td class="dbResult">85</td>
-                    <td class="dbName">Pawel</td>
+                    <td class="dbResult" id="dbResult5"></td>
+                    <td class="dbName" id="dbName5"></td>
                 </tr>
                 <tr class="whiteBackground">
-                    <td class="dbResult">60</td>
-                    <td class="dbName">Pawel</td>
+                    <td class="dbResult" id="dbResult6"></td>
+                    <td class="dbName" id="dbName6"></td>
                 </tr>
                 <tr>
-                    <td class="dbResult">55</td>
-                    <td class="dbName">Pawel</td>
+                    <td class="dbResult" id="dbResult7"></td>
+                    <td class="dbName" id="dbName7"></td>
                 </tr>
                 <tr class="whiteBackground">
-                    <td class="dbResult">50</td>
-                    <td class="dbName">Pawel</td>
+                    <td class="dbResult" id="dbResult8"></td>
+                    <td class="dbName" id="dbName8"></td>
                 </tr>
                 <tr>
-                    <td class="dbResult">32</td>
-                    <td class="dbName">Pawel</td>
+                    <td class="dbResult" id="dbResult9"></td>
+                    <td class="dbName" id="dbName9"></td>
                 </tr>
                 <tr class="whiteBackground">
-                    <td class="dbResult">12</td>
-                    <td class="dbName">Pawel</td>
+                    <td class="dbResult" id="dbResult10"></td>
+                    <td class="dbName" id="dbName10"></td>
                 </tr>
             </table>
         </div>
@@ -91,7 +90,8 @@
             <p id="finalScore"></p>
             <p id="submitScore"></p>
             <form method="post" class="invisible nameForm" id="nameForm">
-                <input type="text" name="name" id="name" title="" autocomplete="off">
+                <input type="text" name="name" id="name" title="" maxlength="10" autocomplete="off"
+                       placeholder="10 characters maximum">
                 <input type="submit" name="submit" id="submit">
             </form>
         </div>

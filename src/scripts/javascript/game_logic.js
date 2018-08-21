@@ -113,7 +113,7 @@ function submitScore() {
 function addRecordToDb() {
     $.ajax({
         url: "/src/scripts/php/increment_total.php",
-        type: "post",
+        type: "post"
     });
 }
 
