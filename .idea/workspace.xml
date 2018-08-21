@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c94cf358-c865-42fd-acfa-52b0ebc27390" name="Actual changes" comment="adding query to populate the table with highscores">
-      <change beforePath="$PROJECT_DIR$/src/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/php/submit_score.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/php/submit_score.php" afterDir="false" />
-    </list>
-    <list id="2f0f3b3d-6791-483d-8464-b07a438f982c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <list id="d6fd635b-22e6-441a-b231-07293fbf5cc3" name="Do not commit" comment="">
-      <change beforePath="$PROJECT_DIR$/src/scripts/javascript/populate_table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/php/connection.php" afterDir="false" />
-    </list>
+    <list default="true" id="c94cf358-c865-42fd-acfa-52b0ebc27390" name="Actual changes" comment="raising character limit to 12" />
+    <list id="2f0f3b3d-6791-483d-8464-b07a438f982c" name="Default" comment="" />
+    <list id="d6fd635b-22e6-441a-b231-07293fbf5cc3" name="Do not commit" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +47,7 @@
           <entry key="html" value="2" />
           <entry key="ini" value="3" />
           <entry key="js" value="7" />
-          <entry key="php" value="20" />
+          <entry key="php" value="21" />
           <entry key="rnc" value="2" />
           <entry key="sql" value="6" />
           <entry key="ts" value="1" />
@@ -66,7 +59,7 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="2" />
           <entry key="JavaScript" value="7" />
-          <entry key="PHP" value="20" />
+          <entry key="PHP" value="21" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="RNG Compact" value="2" />
           <entry key="SQL" value="6" />
@@ -83,7 +76,7 @@
           <entry key="js" value="733" />
           <entry key="php" value="1480" />
           <entry key="sql" value="47" />
-          <entry key="txt" value="561" />
+          <entry key="txt" value="591" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -92,7 +85,7 @@
           <entry key="HTML" value="467" />
           <entry key="JavaScript" value="733" />
           <entry key="PHP" value="1474" />
-          <entry key="PLAIN_TEXT" value="641" />
+          <entry key="PLAIN_TEXT" value="671" />
           <entry key="SQL" value="53" />
         </counts>
       </usages-collector>
@@ -148,11 +141,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/php/submit_score.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="161">
+              <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scripts/php/connection.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -462,7 +464,7 @@
       <workItem from="1534766515571" duration="324000" />
       <workItem from="1534767084588" duration="13046000" />
       <workItem from="1534800987313" duration="2655000" />
-      <workItem from="1534834004503" duration="12126000" />
+      <workItem from="1534834004503" duration="12543000" />
     </task>
     <task id="LOCAL-00001" summary="setting up html and css">
       <created>1520804594972</created>
@@ -646,17 +648,23 @@
       <option name="project" value="LOCAL" />
       <updated>1534867694943</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="raising character limit to 12">
+      <created>1534869940935</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1534869940935</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58181000" />
+    <option name="totallyTimeSpent" value="58598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" id="Project" order="0" visible="true" weight="0.24" />
+      <window_info id="Project" order="0" visible="true" weight="0.24" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -670,7 +678,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.26815644" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.26815644" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
@@ -719,7 +727,8 @@
     <MESSAGE value="re-style refactoring complete" />
     <MESSAGE value="adding query to track total number of games played" />
     <MESSAGE value="adding query to populate the table with highscores" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding query to populate the table with highscores" />
+    <MESSAGE value="raising character limit to 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="raising character limit to 12" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bootstrap.js" />
@@ -818,13 +827,6 @@
     <entry file="file://$PROJECT_DIR$/src/scripts/javascript/populate_table.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/php/connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/php/queries.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -886,8 +888,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/php/submit_score.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="161">
+          <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/php/connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="14" />
         </state>
       </provider>
     </entry>
