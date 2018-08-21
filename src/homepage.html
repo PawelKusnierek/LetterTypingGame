@@ -23,13 +23,13 @@
 
 <div id="box-container">
     <div class="box-item">
-        <p id="number">60</p>
+        <p id="number" class="box-styling">60</p>
     </div>
     <div class="box-item">
-        <p id="letterOnScreen">K</p>
+        <p id="letterOnScreen" class="box-styling">K</p>
     </div>
     <div class="box-item">
-        <p id="scoreDisplay">0</p>
+        <p id="scoreDisplay" class="box-styling">0</p>
     </div>
 </div>
 
@@ -48,7 +48,7 @@
                 </tr>
                 <tr class="whiteBackground">
                     <td class="dbResult">111</td>
-                    <td class="dbName">Pawel12345</td>
+                    <td class="dbName">Pawel</td>
 
                 </tr>
                 <tr>
@@ -86,24 +86,18 @@
             </table>
         </div>
     </div>
-    <div class="bottom-item"></div>
-    <button class="bottom-item">Restart Game</button>
+    <div class="bottom-item">
+        <div id="yourScore">
+            <p id="finalScore"></p>
+            <p id="submitScore"></p>
+            <form method="post" class="invisible nameForm" id="nameForm">
+                <input type="text" name="name" id="name" title="">
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </div>
+    </div>
+    <button id="resetContent" class="bottom-item">Restart Game</button>
 </div>
-
-<div id="yourScore">
-    <p id="finalScore"></p>
-    <p id="submitScore"></p>
-</div>
-
-<form method="post" class="invisible nameForm" id="nameForm">
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name">
-    <label for="submit">Submit</label>
-    <input type="submit" name="submit" id="submit">
-</form>
-
-
-
 
 <script src="/src/scripts/javascript/script.js"></script>
 </body>

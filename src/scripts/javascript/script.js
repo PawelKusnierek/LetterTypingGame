@@ -56,7 +56,7 @@ function startTimer(display) {
             onTimerEnd();
             return '';
         }
-    }, 1);
+    }, 10);
 }
 
 function successfulKey() {
@@ -84,9 +84,8 @@ function onTimerEnd() {
 
 function removeTransition(e) {
     let classList = e.target.classList;
-    while (classList.length > 0) {
-        classList.remove(classList.item(0));
-    }
+    classList.remove("red");
+    classList.remove("green");
 }
 
 function refreshGame() {
@@ -95,16 +94,12 @@ function refreshGame() {
 
 function displayScore() {
     finalScoreDiv.textContent = "Your final score: " + score;
-    submitScoreButton.textContent = "Enter your name to store score in database:";
+    submitScoreButton.textContent = "Enter your name to submit your result";
     nameForm.classList.remove("invisible");
 }
 
 function submitScore() {
     let userName = document.getElementById('name').value;
-    //Script to insert the submitted name + score
-    sqlScript = `INSERT INTO lettergame.scores(
-\tname, score)
-\tVALUES (${userName},${score});`;
 
     $.ajax({
         url: "/src/scripts/php/submit_score.php",

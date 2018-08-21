@@ -131,7 +131,7 @@ h2 {
     margin-left: 5%;
 }
 
-p {
+.box-styling {
     font-family: 'Lato', sans-serif;
     font-size: 5rem;
     margin: 0;
@@ -141,7 +141,7 @@ p {
 }
 
 #scoreDisplay {
-    transition: all .20s ease;
+    transition: all .10s ease;
 }
 
 .green {
@@ -192,8 +192,6 @@ p {
     margin-top: 2%;
 }
 
-
-
 #highScores {
     display: flex;
     flex: 1;
@@ -226,10 +224,32 @@ table {
 
 .dbResult {
     text-align: center;
-    width: 50%;
+    width: 35%;
 }
 
 .dbName {
     text-align: center;
-    width: 50%;
+    width: 65%;
+}
+
+#finalScore {
+    margin: 0;
+    padding:0;
+    width:100%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size:1.5rem;
+}
+
+#submitScore {
+    margin: 10px 0 10px 0;
+    padding:0;
+    width:100%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size:1rem;
+}
+
+.invisible {
+    visibility: hidden;
 }
