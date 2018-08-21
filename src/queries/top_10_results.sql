@@ -1,3 +1,3 @@
-SELECT name, score FROM lettergame.scores
+SELECT name, score FROM scores
 ORDER BY score DESC 
 LIMIT 10
