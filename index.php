@@ -4,11 +4,11 @@ include 'src/homepage.html';
 
 $dbopts = parse_url(getenv('DATABASE_URL'));
 
-//$db_connection = pg_connect("host=".$dbopts["host"]." dbname=".ltrim($dbopts["path"],'/'." user="
+//$db_connection = pg_connect("host=".$dbopts["host"]." dbname=".ltrim($dbopts["path"],'/')." user="
 //        .$dbopts["user"]."password=".$dbopts["pass"]."\""));
 
-$db_connection = pg_connect("host=ec2-54-247-101-191.eu-west-1.compute.amazonaws.com dbname=d7befugnmmgsln user=
-mblncxqnoypnkr password=9f086c22a446a448990286faa30c45ff485cf662698c19c9b0b6e6a48e074970");
+$db_connection = pg_connect("host=ec2-54-247-101-191.eu-west-1.compute.amazonaws.com dbname=d7befugnmmgsln 
+user=mblncxqnoypnkr password=9f086c22a446a448990286faa30c45ff485cf662698c19c9b0b6e6a48e074970");
 
 
 $resultsQuery = file_get_contents('src/queries/top_10_results.sql');
@@ -19,6 +19,12 @@ $array = pg_fetch_all($result);
 <script type="text/javascript">
     let resultsArray = [];
     resultsArray = <?php echo json_encode($array); ?>;
+
+   let a = <?php echo $dbopts["host"];?>;
+   let b = <?php echo ltrim($dbopts["path"],'/');?>;
+   let c = <?php echo $dbopts["user"];?>;
+   let d = <?php echo $dbopts["pass"];?>;
+
 
     // TODO this is terrible, bad, awful, think of a better way than this shambiotic temporary solution
     const dbResult1 = document.getElementById("dbResult1");
