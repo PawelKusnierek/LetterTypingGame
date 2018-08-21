@@ -3,21 +3,12 @@
 include 'src/homepage.html';
 
 $dbopts = parse_url(getenv('DATABASE_URL'));
-$app->register(new Csanquer\Silex\PdoServiceProvider\Provider\PDOServiceProvider('pdo'),
-    array(
-        'pdo.server' => array(
-            'driver'   => 'pgsql',
-            'user' => $dbopts["user"],
-            'password' => $dbopts["pass"],
-            'host' => $dbopts["host"],
-            'port' => $dbopts["port"],
-            'dbname' => ltrim($dbopts["path"],'/')
-        )
-    )
-);
+
+$db_connection = pg_connect("host=".$dbopts["host"]." dbname=".ltrim($dbopts["path"],'/'." user="
+        .$dbopts["user"]."password=".$dbopts["pass"]));
 
 $resultsQuery = file_get_contents('src/queries/top_10_results.sql');
-$result = pg_query($app, $resultsQuery);
+$result = pg_query($db_connection, $resultsQuery);
 $array = pg_fetch_all($result);
 ?>
 
