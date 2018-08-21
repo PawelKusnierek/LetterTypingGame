@@ -1,4 +1,5 @@
 .idea/
+/vendor
 
 src/*.rb
 
@@ -13,6 +14,8 @@ src/scripts/php/connection.php
 
 node_modules/
 jspm_packages/
+
+composer.json
 
 *.log
 npm-debug.log*
