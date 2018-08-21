@@ -55,7 +55,7 @@ function startTimer(display) {
             onTimerEnd();
             return '';
         }
-    }, 1);
+    }, 1000);
 }
 
 function successfulKey() {
