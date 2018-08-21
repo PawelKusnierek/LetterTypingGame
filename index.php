@@ -16,12 +16,6 @@ $array = pg_fetch_all($result);
     let resultsArray = [];
     resultsArray = <?php echo json_encode($array); ?>;
 
-   let a = <?php echo $dbopts["host"];?>;
-   let b = <?php echo ltrim($dbopts["path"],'/');?>;
-   let c = <?php echo $dbopts["user"];?>;
-   let d = <?php echo $dbopts["pass"];?>;
-
-
     // TODO this is terrible, bad, awful, think of a better way than this shambiotic temporary solution
     const dbResult1 = document.getElementById("dbResult1");
     const dbResult2 = document.getElementById("dbResult2");
