@@ -242,7 +242,7 @@ table {
 }
 
 #submitScore {
-    margin: 10px 0 10px 0;
+    margin: 15px 0 5px 0;
     padding:0;
     width:100%;
     text-align: center;
@@ -252,4 +252,10 @@ table {
 
 .invisible {
     visibility: hidden;
+}
+
+.nameForm {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size:1.5rem;
 }

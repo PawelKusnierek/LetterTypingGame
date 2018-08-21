@@ -11,7 +11,7 @@
 
 <div id="title" class="flex-container">
     <h1 id="gameName" class="flex-item">The Letter Typing Game</h1>
-    <h2 id="instruction" class="flex-item">60 seconds to press the correct letter as many times as you can. <br>
+    <h2 id="instruction" class="flex-item">30 seconds to press the correct letter as many times as you can. <br>
         The timer will start as soon as you press the first letter.</h2>
 </div>
 
@@ -23,7 +23,7 @@
 
 <div id="box-container">
     <div class="box-item">
-        <p id="number" class="box-styling">60</p>
+        <p id="number" class="box-styling">30</p>
     </div>
     <div class="box-item">
         <p id="letterOnScreen" class="box-styling">K</p>
@@ -91,7 +91,7 @@
             <p id="finalScore"></p>
             <p id="submitScore"></p>
             <form method="post" class="invisible nameForm" id="nameForm">
-                <input type="text" name="name" id="name" title="">
+                <input type="text" name="name" id="name" title="" autocomplete="off">
                 <input type="submit" name="submit" id="submit">
             </form>
         </div>
@@ -99,6 +99,6 @@
     <button id="resetContent" class="bottom-item">Restart Game</button>
 </div>
 
-<script src="/src/scripts/javascript/script.js"></script>
+<script src="/src/scripts/javascript/game_logic.js"></script>
 </body>
 </html>

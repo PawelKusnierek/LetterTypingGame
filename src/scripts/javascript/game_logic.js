@@ -9,7 +9,6 @@ const refreshButton = document.querySelector('#resetContent');
 const finalScoreDiv = document.querySelector('#finalScore');
 const submitScoreButton = document.querySelector('#submitScore');
 const nameForm = document.querySelector('#nameForm');
-let sqlScript;
 
 onLoad();
 
@@ -42,7 +41,7 @@ function onKeyPress(event) {
 }
 
 function startTimer(display) {
-    let timer = 59;
+    let timer = 29;
     let seconds;
     isTimerLive = true;
 
@@ -56,7 +55,7 @@ function startTimer(display) {
             onTimerEnd();
             return '';
         }
-    }, 10);
+    }, 1);
 }
 
 function successfulKey() {
@@ -79,7 +78,7 @@ function onTimerEnd() {
     document.removeEventListener("keypress", onKeyPress);
     clearInterval(returnIntervalId);
     displayScore();
-    //query database and if result in top 10
+    addRecordToDb();
 }
 
 function removeTransition(e) {
@@ -108,6 +107,13 @@ function submitScore() {
             userName: userName,
             score: score
         }
+    });
+}
+
+function addRecordToDb() {
+    $.ajax({
+        url: "/src/scripts/php/increment_total.php",
+        type: "post",
     });
 }
 
