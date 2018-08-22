@@ -10,8 +10,6 @@ venv/
 /out/
 .npm
 
-src/scripts/php/connection.php
-
 node_modules/
 jspm_packages/
 
