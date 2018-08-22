@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c94cf358-c865-42fd-acfa-52b0ebc27390" name="Actual changes" comment="heroku database stuff">
+      <change beforePath="$PROJECT_DIR$/.idea/LetterGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LetterGame.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/php/connection.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/php/increment_total.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/php/increment_total.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/php/submit_score.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/php/submit_score.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
     <list id="2f0f3b3d-6791-483d-8464-b07a438f982c" name="Default" comment="" />
     <list id="d6fd635b-22e6-441a-b231-07293fbf5cc3" name="Do not commit" comment="" />
@@ -15,6 +14,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -34,25 +36,28 @@
     <session id="309554499">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.59" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
-          <entry key="gitignore" value="3" />
-          <entry key="html" value="3" />
+          <entry key="css" value="2" />
+          <entry key="gitignore" value="4" />
+          <entry key="html" value="4" />
           <entry key="ini" value="3" />
-          <entry key="js" value="7" />
+          <entry key="js" value="8" />
+          <entry key="json" value="1" />
           <entry key="php" value="25" />
           <entry key="rnc" value="2" />
           <entry key="sql" value="7" />
@@ -62,11 +67,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="HTML" value="3" />
-          <entry key="JavaScript" value="7" />
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="4" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="8" />
           <entry key="PHP" value="25" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="PLAIN_TEXT" value="7" />
           <entry key="RNG Compact" value="2" />
           <entry key="SQL" value="7" />
           <entry key="TypeScript" value="1" />
@@ -75,23 +81,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1078" />
+          <entry key="css" value="1123" />
           <entry key="gitignore" value="61" />
-          <entry key="html" value="467" />
+          <entry key="html" value="477" />
           <entry key="ini" value="43" />
-          <entry key="js" value="733" />
-          <entry key="php" value="1519" />
+          <entry key="js" value="736" />
+          <entry key="php" value="1616" />
           <entry key="sql" value="102" />
-          <entry key="txt" value="642" />
+          <entry key="txt" value="704" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1078" />
-          <entry key="HTML" value="467" />
-          <entry key="JavaScript" value="733" />
-          <entry key="PHP" value="1513" />
-          <entry key="PLAIN_TEXT" value="746" />
+          <entry key="CSS" value="1123" />
+          <entry key="HTML" value="477" />
+          <entry key="JavaScript" value="736" />
+          <entry key="PHP" value="1610" />
+          <entry key="PLAIN_TEXT" value="808" />
           <entry key="SQL" value="108" />
         </counts>
       </usages-collector>
@@ -111,65 +117,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="4" selection-start-line="5" selection-end-line="5" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scripts/php/increment_total.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="18" selection-start-line="2" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scripts/php/queries.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scripts/php/submit_score.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="-748">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/queries/increment_total_games.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="93" column="80" selection-start-line="93" selection-start-column="80" selection-end-line="93" selection-end-column="80" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="379">
+              <caret line="46" column="59" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -177,34 +135,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            <state relative-caret-position="253">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/queries/top_10_results.sql">
+        <entry file="file://$PROJECT_DIR$/src/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            <state relative-caret-position="4621">
+              <caret line="302" column="19" lean-forward="true" selection-start-line="302" selection-start-column="19" selection-end-line="302" selection-end-column="19" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -253,18 +201,18 @@
         <option value="$PROJECT_DIR$/src/queries/insert_score.sql" />
         <option value="E:/Programming/xampp/php/php.ini" />
         <option value="$PROJECT_DIR$/src/scripts/javascript/submit_score.php" />
-        <option value="$PROJECT_DIR$/src/style.css" />
         <option value="$PROJECT_DIR$/src/scripts/javascript/script.js" />
         <option value="$PROJECT_DIR$/src/scripts/php/queries.php" />
-        <option value="$PROJECT_DIR$/src/scripts/javascript/game_logic.js" />
-        <option value="$PROJECT_DIR$/src/homepage.html" />
         <option value="$PROJECT_DIR$/src/scripts/php/connection.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/queries/increment_total_games.sql" />
         <option value="$PROJECT_DIR$/src/queries/top_10_results.sql" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/src/scripts/php/increment_total.php" />
         <option value="$PROJECT_DIR$/src/scripts/php/submit_score.php" />
+        <option value="$PROJECT_DIR$/src/scripts/javascript/game_logic.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/style.css" />
+        <option value="$PROJECT_DIR$/src/homepage.html" />
       </list>
     </option>
   </component>
@@ -291,7 +239,24 @@
       <server host="localhost" id="7fa9d27e-2840-4993-8eb2-0a9070cf2246" name="debug php" />
     </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/csanquer/pdo-service-provider" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/silex/silex" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
@@ -336,6 +301,13 @@
               <item name="LetterGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LetterGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LetterGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
               <item name="php" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -351,7 +323,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="E:/Programming/xampp/php/php.ini" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cognifidebooktask" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
@@ -457,6 +429,8 @@
       <workItem from="1534767084588" duration="13046000" />
       <workItem from="1534800987313" duration="2655000" />
       <workItem from="1534834004503" duration="12543000" />
+      <workItem from="1534922157067" duration="480000" />
+      <workItem from="1534942644002" duration="901000" />
     </task>
     <task id="LOCAL-00001" summary="setting up html and css">
       <created>1520804594972</created>
@@ -661,16 +635,101 @@
       <option name="project" value="LOCAL" />
       <updated>1534874575343</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="heroku database stuff">
+      <created>1534874944733</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1534874944733</updated>
+    </task>
+    <task id="LOCAL-00031" summary="heroku database stuff">
+      <created>1534875362257</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1534875362257</updated>
+    </task>
+    <task id="LOCAL-00032" summary="heroku database stuff">
+      <created>1534875462988</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1534875462988</updated>
+    </task>
+    <task id="LOCAL-00033" summary="heroku database stuff">
+      <created>1534875731115</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1534875731115</updated>
+    </task>
+    <task id="LOCAL-00034" summary="heroku database stuff">
+      <created>1534875912971</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1534875912971</updated>
+    </task>
+    <task id="LOCAL-00035" summary="heroku database stuff">
+      <created>1534876098608</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1534876098608</updated>
+    </task>
+    <task id="LOCAL-00036" summary="heroku database stuff">
+      <created>1534876557705</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1534876557705</updated>
+    </task>
+    <task id="LOCAL-00037" summary="heroku database stuff">
+      <created>1534876705262</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1534876705262</updated>
+    </task>
+    <task id="LOCAL-00038" summary="heroku database stuff">
+      <created>1534876756361</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1534876756361</updated>
+    </task>
+    <task id="LOCAL-00039" summary="heroku database stuff">
+      <created>1534876929317</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1534876929317</updated>
+    </task>
+    <task id="LOCAL-00040" summary="heroku database stuff">
+      <created>1534876988005</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1534876988005</updated>
+    </task>
+    <task id="LOCAL-00041" summary="HEROKU stuff finalised, now fully working and synced on heroku">
+      <created>1534922234010</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1534922234010</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62510000" />
+    <option name="totallyTimeSpent" value="67895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" id="Project" order="0" visible="true" weight="0.24" />
+      <window_info active="true" id="Project" order="0" visible="true" weight="0.24533333" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -705,11 +764,36 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added random letter generator and display next letter method" />
     <MESSAGE value="initial version finalised" />
     <MESSAGE value="handling timer end" />
     <MESSAGE value="disabling the setInterval on timer end" />
@@ -734,7 +818,8 @@
     <MESSAGE value="raising character limit to 12" />
     <MESSAGE value="preparing heroku db deployment" />
     <MESSAGE value="heroku database stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="heroku database stuff" />
+    <MESSAGE value="HEROKU stuff finalised, now fully working and synced on heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="HEROKU stuff finalised, now fully working and synced on heroku" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bootstrap.js" />
@@ -824,34 +909,32 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/javascript/populate_table.js" />
-    <entry file="file://$PROJECT_DIR$/src/style.css">
+    <entry file="file://$PROJECT_DIR$/src/scripts/php/connection.php" />
+    <entry file="file://$PROJECT_DIR$/src/scripts/php/queries.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
+        <state relative-caret-position="69">
+          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/javascript/game_logic.js">
+    <entry file="file://$PROJECT_DIR$/src/scripts/php/increment_total.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+        <state relative-caret-position="115">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/homepage.html">
+    <entry file="file://$PROJECT_DIR$/src/scripts/php/submit_score.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="93" column="80" selection-start-line="93" selection-start-column="80" selection-end-line="93" selection-end-column="80" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="115">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/queries/increment_total_games.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="46">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -862,45 +945,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/php/increment_total.php">
+    <entry file="file://$PROJECT_DIR$/src/scripts/javascript/game_logic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="18" selection-start-line="2" selection-end-line="3" />
+        <state relative-caret-position="-159">
+          <caret line="57" column="11" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/php/queries.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-end-line="4" />
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/php/submit_score.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/php/connection.php">
+    <entry file="file://$PROJECT_DIR$/src/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+        <state relative-caret-position="4621">
+          <caret line="302" column="19" lean-forward="true" selection-start-line="302" selection-start-column="19" selection-end-line="302" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="4" selection-start-line="5" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="-748">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/queries/increment_total_games.sql">
+    <entry file="file://$PROJECT_DIR$/src/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        <state relative-caret-position="379">
+          <caret line="46" column="59" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
         </state>
       </provider>
     </entry>
