@@ -1,0 +1,1 @@
+create table total_games (id text, number integer);

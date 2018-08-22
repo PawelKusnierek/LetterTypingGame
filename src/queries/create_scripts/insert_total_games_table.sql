@@ -1,0 +1,1 @@
+insert into total_games (id, number) values ('1', 0);

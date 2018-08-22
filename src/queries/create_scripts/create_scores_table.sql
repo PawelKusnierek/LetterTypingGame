@@ -1,0 +1,1 @@
+create table scores (name text not null, score integer not null);
