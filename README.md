@@ -15,8 +15,11 @@ If you would like to deploy this app on heroku using herokus PostgreSQL addon fo
 1. Create a heroku project using the source code on branch master
 2. Add Heroku PostgreSQL addon to the project
 3. Using either Heroku PostgreSQL CLI or *heroku-data-explorer* (highly recommended, basically a web interface for managing your heroku database) run the scripts located under src/queries/create_scripts in the following order:
+
 -create_scores_table
+
 -create_total_games_table
+
 -insert_total_games_table
 
 After this you should be ready to just deploy the application and access it, everything else should be taken care of in the source code.
